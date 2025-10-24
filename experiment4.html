@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1 align="center">Hotel Room Booking Form</h1>
+    <form action="./response.html" target="_blank" name="Hotel Room Booking Form" method="get" align="center">
+        <fieldset>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required/><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required/><br><br>
+            <label for="tel">Phone:</label>
+            <input type="number" id="tel" name="tel" placeholder="Enter your Phone number" required/><br><br>
+            <label for="C-I-D">Check-In-Date:</label>
+            <input type="date" id="CID" name="C-I-D" placeholder="dd-mm-yyyy" required/><br><br>
+            <label for="C-O-D">Check-Out-Date:</label>
+            <input type="date" id="COD" name="COD" placeholder="dd-mm-yyyy" required/><br><br>
+            <label for="room">Room Type:</label>
+            <select id="room" name="room">
+                <option value="none" selected disabled>Select an option</option>
+                <option value="single room">Single Room</option>
+                <option value="double room">Double Room</option>
+                <option value="Suite"> Family Suite</option>
+            </select><br><br>
+            <label for="N-O-G">Number Of Guest:</label>
+            <input type="number" id="guest" name="guest" min="1" max="6" required/><br><br>
+            <label for="requests">Special Requests:</label><br>
+            <textarea id="requests" name="requests" rows="3" cols="30" placeholder="Enter any special requests here..."></textarea>
+            <br><br>
+            <input type="submit" value="Book Now">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>  
+</body>
+</html>
